@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% if title %}
+            <title>My Blog - {{ title }}</title>
+        {% else %}
+            <title>My Blog</title>
+        {% endif %}
+    <body>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
